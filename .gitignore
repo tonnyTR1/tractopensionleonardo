@@ -1,0 +1,4 @@
+/env.local.php
+/logs/*.log
+/vendor/
+!/logs/.gitkeep

@@ -1,0 +1,69 @@
+<?php
+function SideBarView(){
+    return "
+     <nav class='sidebar sidebar-offcanvas' id='sidebar'>
+          <ul class='nav'>
+            <li class='nav-item nav-category'>Menú</li>
+            <li class='nav-item'>
+              <a class='nav-link' href='?menu=panel'>
+                <span class='icon-bg'><i class='mdi mdi-cube menu-icon'></i></span>
+                <span class='menu-title'>Dashboard</span>
+              </a>
+            </li>
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='?menu=micamion'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Mi camión</span>
+              </a>
+            </li>
+
+            <li class='nav-item'>
+              <a class='nav-link' href='pages/samples/widgets.html'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Mi espacio</span>
+              </a>
+            </li>
+
+            <li class='nav-item'>
+              <a class='nav-link' href='pages/samples/widgets.html'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Apartar Espacio</span>
+              </a>
+            </li>
+
+            <li class='nav-item'>
+              <a class='nav-link' href='pages/samples/widgets.html'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Pagos</span>
+              </a>
+            </li>
+
+            <li class='nav-item'>
+              <a class='nav-link' href='pages/samples/widgets.html'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Historial</span>
+              </a>
+            </li>
+
+            <li class='nav-item'>
+              <a class='nav-link' href='pages/samples/widgets.html'>
+                <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
+                <span class='menu-title'>Accesos</span>
+              </a>
+            </li>
+
+            <li class='nav-item sidebar-user-actions'>
+              <div class='sidebar-user-menu'>
+                <a href='#' class='nav-link'><i class='mdi mdi-settings menu-icon'></i>
+                  <span class='menu-title'>Configuraciones</span>
+                </a>
+              </div>
+            </li>
+            
+            
+          </ul>
+        </nav>
+    ";
+}
+?>
