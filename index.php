@@ -25,4 +25,5 @@ else if ($menu=='apartarespacio'){
 else {
     include 'views/Error404View.php';
 }
+//este es el index 
 ?>
