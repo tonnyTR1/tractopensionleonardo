@@ -12,7 +12,16 @@ else if ($menu=='panel'){
 }
 else if ($menu=='micamion'){
     include 'views/MiCamionView.php';
+
 }
+else if ($menu=='miespacio'){
+    include 'views/MiEspacioview.php';
+}
+
+else if ($menu=='apartarespacio'){
+    include 'views/ApartarEspacioview.php';
+}
+
 else {
     include 'views/Error404View.php';
 }

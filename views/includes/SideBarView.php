@@ -19,14 +19,14 @@ function SideBarView(){
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link' href='pages/samples/widgets.html'>
+              <a class='nav-link' href='?menu=miespacio'>
                 <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
                 <span class='menu-title'>Mi espacio</span>
               </a>
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link' href='pages/samples/widgets.html'>
+              <a class='nav-link' href='?menu=apartarespacio'>
                 <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
                 <span class='menu-title'>Apartar Espacio</span>
               </a>
