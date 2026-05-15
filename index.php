@@ -22,6 +22,12 @@ else if ($menu=='apartarespacio'){
     include 'views/ApartarEspacioview.php';
 }
 
+else if ($menu == 'perfil') {
+
+    include 'views/PerfilView.php';
+
+}
+
 else {
     include 'views/Error404View.php';
 }
