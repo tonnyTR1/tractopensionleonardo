@@ -45,10 +45,9 @@ require_once 'views/includes/NavBarView.php';
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="d-xl-flex justify-content-between align-items-start">
-              <h2 class="text-dark font-weight-bold mb-2"> Overview dashboard </h2>
+              <h2 class="text-dark font-weight-bold mb-2"> Dashboard (Cliente)</h2>
               <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
                 <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-link text-light py-0 border-right">7 Days</button>
                   <button type="button" class="btn btn-link text-dark py-0 border-right">1 Month</button>
                   <button type="button" class="btn btn-link text-light py-0">3 Month</button>
                 </div>
@@ -93,45 +92,34 @@ require_once 'views/includes/NavBarView.php';
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Orders</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">932.00</h2>
-                            <div class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-lightbulb icon-md absolute-center text-dark"></i></div>
-                            <p class="mt-4 mb-0">Completed</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">5443</h3>
-                          </div>
+                            <h5 class="mb-2 text-dark font-weight-normal">Camiones Registrados</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">70</h2>
+<i class="mdi mdi-truck icon-lg text-dark"></i>
+                      </div>
                         </div>
                       </div>
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Unique Visitors</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">756,00</h2>
-                            <div class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-account-circle icon-md absolute-center text-dark"></i></div>
-                            <p class="mt-4 mb-0">Increased since yesterday</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">50%</h3>
-                          </div>
+                            <h5 class="mb-2 text-dark font-weight-normal">Espacios disponibles</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">20</h2>
+<i class="mdi mdi-package-variant icon-lg text-dark"></i>                          </div>
                         </div>
                       </div>
                       <div class="col-xl-3  col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Impressions</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">100,38</h2>
-                            <div class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-eye icon-md absolute-center text-dark"></i></div>
-                            <p class="mt-4 mb-0">Increased since yesterday</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">35%</h3>
-                          </div>
+                            <h5 class="mb-2 text-dark font-weight-normal">Pagos pendientes</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">8</h2>
+<i class="mdi mdi-cash-multiple icon-lg text-dark"></i>                          </div>
                         </div>
                       </div>
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
-                            <h5 class="mb-2 text-dark font-weight-normal">Followers</h5>
-                            <h2 class="mb-4 text-dark font-weight-bold">4250k</h2>
-                            <div class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-cube icon-md absolute-center text-dark"></i></div>
-                            <p class="mt-4 mb-0">Decreased since yesterday</p>
-                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">25%</h3>
-                          </div>
+                            <h5 class="mb-2 text-dark font-weight-normal">Pagos al corriente</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">10</h2>
+<i class="mdi mdi-alert-circle icon-lg text-dark"></i>                          </div>
                         </div>
                       </div>
                     </div>
