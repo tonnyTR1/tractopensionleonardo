@@ -5,54 +5,42 @@ require_once 'views/includes/NavBarView.php';
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tracto Pensión</title>
-    <!-- plugins:css -->
     <link rel="stylesheet" href="public/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="public/assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="public/assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
     <link rel="stylesheet" href="public/assets/vendors/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="public/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
     <link rel="stylesheet" href="public/assets/css/demo_1/style.css">
-    <!-- End layout styles -->
     <link rel="shortcut icon" href="public/assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
-      
-       <?=NavBarView(); ?>
 
-      <!-- partial -->
+      <?= NavBarView(); ?>
+
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
         <div id="settings-trigger"><i class="mdi mdi-settings"></i></div>
-        
-        <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
 
-        <?=SideBarView(); ?>
+        <?= SideBarView(); ?>
 
-        <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+
+            <!-- Encabezado -->
             <div class="d-xl-flex justify-content-between align-items-start">
-              <h2 class="text-dark font-weight-bold mb-2"> Dashboard (Cliente)</h2>
+              <h2 class="text-dark font-weight-bold mb-2">Dashboard (Cliente)</h2>
               <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
-                <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
+                <div class="btn-group bg-white p-3" role="group">
                   <button type="button" class="btn btn-link text-dark py-0 border-right">1 Month</button>
                   <button type="button" class="btn btn-link text-light py-0">3 Month</button>
                 </div>
                 <div class="dropdown ml-0 ml-md-4 mt-2 mt-lg-0">
-                  <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-calendar mr-1"></i>24 Mar 2019 - 24 Mar 2019 </button>
+                  <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="mdi mdi-calendar mr-1"></i>24 Mar 2019 - 24 Mar 2019
+                  </button>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
                     <h6 class="dropdown-header">Settings</h6>
                     <a class="dropdown-item" href="#">Action</a>
@@ -64,9 +52,11 @@ require_once 'views/includes/NavBarView.php';
                 </div>
               </div>
             </div>
+
+            <!-- Tabs -->
             <div class="row">
               <div class="col-md-12">
-                <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
+                <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border">
                   <ul class="nav nav-tabs tab-transparent" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link" id="home-tab" data-toggle="tab" href="#" role="tab" aria-selected="true">Users</a>
@@ -86,298 +76,160 @@ require_once 'views/includes/NavBarView.php';
                     <a href="#" class="text-light p-1"><i class="mdi mdi-dots-vertical"></i></a>
                   </div>
                 </div>
+
                 <div class="tab-content tab-transparent-content">
                   <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+
+                    <!-- 4 Tarjetas de métricas -->
                     <div class="row">
+
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
                             <h5 class="mb-2 text-dark font-weight-normal">Camiones Registrados</h5>
                             <h2 class="mb-4 text-dark font-weight-bold">70</h2>
-<i class="mdi mdi-truck icon-lg text-dark"></i>
-                      </div>
+                            <i class="mdi mdi-truck icon-lg text-primary"></i>
+                          </div>
                         </div>
                       </div>
+
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
                             <h5 class="mb-2 text-dark font-weight-normal">Espacios disponibles</h5>
                             <h2 class="mb-4 text-dark font-weight-bold">20</h2>
-<i class="mdi mdi-package-variant icon-lg text-dark"></i>                          </div>
+                            <i class="mdi mdi-package-variant icon-lg text-success"></i>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-xl-3  col-lg-6 col-sm-6 grid-margin stretch-card">
+
+                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
                             <h5 class="mb-2 text-dark font-weight-normal">Pagos pendientes</h5>
                             <h2 class="mb-4 text-dark font-weight-bold">8</h2>
-<i class="mdi mdi-cash-multiple icon-lg text-dark"></i>                          </div>
+                            <i class="mdi mdi-cash-multiple icon-lg text-warning"></i>
+                          </div>
                         </div>
                       </div>
+
                       <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body text-center">
                             <h5 class="mb-2 text-dark font-weight-normal">Pagos al corriente</h5>
                             <h2 class="mb-4 text-dark font-weight-bold">10</h2>
-<i class="mdi mdi-alert-circle icon-lg text-dark"></i>                          </div>
+                            <i class="mdi mdi-check-circle icon-lg text-success"></i>
+                          </div>
                         </div>
                       </div>
+
                     </div>
-                    <div class="row">
-                      <div class="col-12 grid-margin">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="col-sm-12">
-                                <div class="d-flex justify-content-between align-items-center mb-4">
-                                  <h4 class="card-title mb-0">Recent Activity</h4>
-                                  <div class="dropdown dropdown-arrow-none">
-                                    <button class="btn p-0 text-dark dropdown-toggle" type="button" id="dropdownMenuIconButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <i class="mdi mdi-dots-vertical"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuIconButton1">
-                                      <h6 class="dropdown-header">Settings</h6>
-                                      <a class="dropdown-item" href="#">Action</a>
-                                      <a class="dropdown-item" href="#">Another action</a>
-                                      <a class="dropdown-item" href="#">Something else here</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#">Separated link</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-3 col-sm-4 grid-margin  grid-margin-lg-0">
-                                <div class="wrapper pb-5 border-bottom">
-                                  <div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
-                                    <p class="mb-0 text-dark">Total Profit</p>
-                                    <span class="text-success"><i class="mdi mdi-arrow-up"></i>2.95%</span>
-                                  </div>
-                                  <h3 class="mb-0 text-dark font-weight-bold">$ 92556</h3>
-                                  <canvas id="total-profit"></canvas>
-                                </div>
-                                <div class="wrapper pt-5">
-                                  <div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
-                                    <p class="mb-0 text-dark">Expenses</p>
-                                    <span class="text-success"><i class="mdi mdi-arrow-up"></i>52.95%</span>
-                                  </div>
-                                  <h3 class="mb-4 text-dark font-weight-bold">$ 59565</h3>
-                                  <canvas id="total-expences"></canvas>
-                                </div>
-                              </div>
-                              <div class="col-lg-9 col-sm-8 grid-margin  grid-margin-lg-0">
-                                <div class="pl-0 pl-lg-4 ">
-                                  <div class="d-xl-flex justify-content-between align-items-center mb-2">
-                                    <div class="d-lg-flex align-items-center mb-lg-2 mb-xl-0">
-                                      <h3 class="text-dark font-weight-bold mr-2 mb-0">Devices sales</h3>
-                                      <h5 class="mb-0">( growth 62% )</h5>
-                                    </div>
-                                    <div class="d-lg-flex">
-                                      <p class="mr-2 mb-0">Timezone:</p>
-                                      <p class="text-dark font-weight-bold mb-0">GMT-0400 Eastern Delight Time</p>
-                                    </div>
-                                  </div>
-                                  <div class="graph-custom-legend clearfix" id="device-sales-legend"></div>
-                                  <canvas id="device-sales"></canvas>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4 grid-margin stretch-card">
-                        <div class="card card-danger-gradient">
-                          <div class="card-body mb-4">
-                            <h4 class="card-title text-white">Account Retention</h4>
-                            <canvas id="account-retension"></canvas>
-                          </div>
-                          <div class="card-body bg-white pt-4">
-                            <div class="row pt-4">
-                              <div class="col-sm-6">
-                                <div class="text-center border-right border-md-0">
-                                  <h4>Conversion</h4>
-                                  <h1 class="text-dark font-weight-bold mb-md-3">$306</h1>
-                                </div>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="text-center">
-                                  <h4>Cancellation</h4>
-                                  <h1 class="text-dark font-weight-bold">$1,520</h1>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-8  grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="d-xl-flex justify-content-between mb-2">
-                              <h4 class="card-title">Page views analytics</h4>
-                              <div class="graph-custom-legend primary-dot" id="pageViewAnalyticLengend"></div>
-                            </div>
-                            <canvas id="page-view-analytic"></canvas>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
-                        <div class="card">
-                          <div class="card-body recent-activity">
-                            <h4 class="card-title">Recent Activity</h4>
-                            <div class="d-flex mb-3">
-                              <div>
-                                <div class="activity-info bg-danger"> I </div>
-                              </div>
-                              <div class="activity-details">
-                                <h4 class="text-dark font-weight-normal">Iva Barber</h4>
-                                <p class="mb-0">added new task on trello</p>
-                                <p class="text-small mb-0">05:58AM</p>
-                              </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                              <div class="activity-info bg-warning"> D </div>
-                              <div class="activity-details">
-                                <h4 class="text-dark font-weight-normal">Dorothy Romero</h4>
-                                <p class="mb-0">added new task on trello</p>
-                                <p class="text-small mb-0">02:50PM</p>
-                              </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                              <div class="activity-info bg-success"> R </div>
-                              <div class="activity-details">
-                                <h4 class="text-dark font-weight-normal">Ricardo Hawkins</h4>
-                                <p class="mb-0">added new task on trello</p>
-                                <p class="text-small mb-0">05:22AM</p>
-                              </div>
-                            </div>
-                            <div class="d-flex">
-                              <div class="activity-info hide-border bg-info"> N </div>
-                              <div class="activity-details">
-                                <h4 class="text-dark font-weight-normal">Noah Montgomery</h4>
-                                <p class="mb-0">added new task on trello</p>
-                                <p class="text-small mb-0">08:19PM</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <h4 class="card-title">My Balance</h4>
-                            <div class="d-lg-flex justify-content-between align-items-center">
-                              <h1 class="text-dark mb-0">$3258</h1>
-                              <p class="text-success mb-0 font-weight-medium">+30.56% ($121)</p>
-                            </div>
-                            <p class="mb-5 pb-1">Deposit: <span class="font-weight-bold">$5430</span></p>
-                            <canvas id="my-balance"></canvas>
-                            <div class="border p-3 mt-2">
-                              <div class="row">
-                                <div class="col-sm-6 mb-4 mb-lg-0">
-                                  <div class="d-lg-flex justify-content-between align-items-center">
-                                    <div class="text-small text-dark">Available :</div>
-                                    <span class="font-weight-bold text-dark text-small ">30.56%</span>
-                                  </div>
-                                  <div class="progress progress-sm mt-1">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="d-lg-flex justify-content-between align-items-center">
-                                    <div class="text-small text-dark">Pending :</div>
-                                    <span class="font-weight-bold text-small text-dark">69.44%</span>
-                                  </div>
-                                  <div class="progress progress-sm mt-1">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="dotted-border p-3 mb-3">
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <h4 class="card-title mb-1">Sales Prediction</h4>
-                                </div>
-                                <div class="col-sm-6">
-                                  <canvas id="prediction-1"></canvas>
-                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
-                                  <p class="text-muted mb-0">350-985 sales</p>
-                                </div>
-                                <div class="col-sm-6">
-                                  <canvas id="prediction-2"></canvas>
-                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
-                                  <p class="text-muted mb-0">350-985 sales</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="dotted-border p-3">
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <h4 class="card-title mt-4 mb-1">Stock History</h4>
-                                </div>
-                                <div class="col-sm-6">
-                                  <canvas id="prediction-3"></canvas>
-                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
-                                  <p class="mb-0 text-muted">350-985 sales</p>
-                                </div>
-                                <div class="col-sm-6">
-                                  <canvas id="prediction-4"></canvas>
-                                  <h3 class="font-weight-bold text-dark  mt-3">$3258</h3>
-                                  <p class="mb-0 text-muted">350-985 sales</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <!-- fin tarjetas -->
+<!-- Gráfica Ocupación Actual -->
+<div class="row">
+  <div class="col-12 grid-margin">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-center mb-3">Ocupación Actual</h4>
+        <div class="d-flex align-items-center justify-content-center">
+          <canvas id="ocupacionChart" width="200" height="200"></canvas>
+          <div class="ml-4">
+            <div class="d-flex align-items-center mb-2">
+              <div style="width:16px;height:16px;background:#7ed321;border:1px solid #ccc;margin-right:8px;"></div>
+              <span>Ocupado</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div style="width:16px;height:16px;background:#ffffff;border:1px solid #ccc;margin-right:8px;"></div>
+              <span>Disponible</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin gráfica ocupación -->
+
+<!-- Tabla Actividad Reciente -->
+<div class="row">
+  <div class="col-12 grid-margin">
+    <div class="card">
+      <div class="card-body">
+
+        <h4 class="card-title mb-3">
+          <a href="#" class="text-primary font-weight-bold">Actividad Reciente</a>
+        </h4>
+
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Línea</th>
+                <th>Nombre del operador</th>
+                <th>Pensionado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+              $actividad = [
+                ['fecha' => '13/03/2026', 'linea' => 'GRL',           'operador' => 'Enrique Guzmán',    'pensionado' => 'Boleto'],
+                ['fecha' => '12/03/2026', 'linea' => 'PETROPIPAS',    'operador' => 'Luis Roldán',       'pensionado' => 'Boleto'],
+                ['fecha' => '11/03/2026', 'linea' => 'COSTA A COSTA', 'operador' => 'Julio Rodríguez',   'pensionado' => 'Boleto'],
+                ['fecha' => '10/03/2026', 'linea' => 'SANTEX',        'operador' => 'Rodrigo Velázquez', 'pensionado' => 'SI'],
+                ['fecha' => '07/03/2026', 'linea' => 'EVERYTIME',     'operador' => 'Manuel Hernández',  'pensionado' => 'SI'],
+              ];
+              foreach ($actividad as $row): ?>
+              <tr>
+                <td><?= $row['fecha'] ?></td>
+                <td><?= $row['linea'] ?></td>
+                <td><?= $row['operador'] ?></td>
+                <td><?= $row['pensionado'] ?></td>
+              </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin tabla actividad reciente -->
+
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
           <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
+
           <footer class="footer">
             <div class="footer-inner-wraper">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap Dash</a>. All rights reserved.</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+                  Copyright © 2025 Tracto Pensión San Leonardo. Todos los derechos reservados.
+                </span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                  Hecho con <i class="mdi mdi-heart text-danger"></i>
+                </span>
               </div>
             </div>
           </footer>
-          <!-- partial -->
+
         </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <!-- plugins:js -->
+
     <script src="public/assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="public/assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="public/assets/vendors/jquery-circle-progress/js/circle-progress.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
     <script src="public/assets/js/off-canvas.js"></script>
     <script src="public/assets/js/hoverable-collapse.js"></script>
     <script src="public/assets/js/misc.js"></script>
     <script src="public/assets/js/settings.js"></script>
     <script src="public/assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="public/assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
   </body>
-</html>
+</html>x

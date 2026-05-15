@@ -348,5 +348,5 @@ $(function() {
       data: browserTrafficData,
       options: doughnutPieOptions
     });
-  }
+  }  
 });
