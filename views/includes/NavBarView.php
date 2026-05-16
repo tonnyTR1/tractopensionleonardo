@@ -43,7 +43,7 @@ function NavBarView(){
                 <div class='p-2'>
                   <h5 class='dropdown-header text-uppercase pl-2 text-dark'>Opciones de Usuario</h5>
                   
-                  <a class='dropdown-item py-1 d-flex align-items-center justify-content-between' href='#'>
+                    <a class='dropdown-item py-1 d-flex align-items-center justify-content-between' href='?menu=perfil'>                    
                     <span>Perfil</span>
                     <span class='p-0'>
                       <span class='badge badge-success'>1</span>
@@ -51,6 +51,11 @@ function NavBarView(){
                     </span>
                   </a>
                   
+                  <a class='dropdown-item py-1 d-flex align-items-center justify-content-between' href='?menu=respaldo'>
+                  <span>Respaldo</span>
+                 <i class='mdi mdi-database-export ml-1'></i>
+                  </a>
+
                   <div role='separator' class='dropdown-divider'></div>
                   <h5 class='dropdown-header text-uppercase  pl-2 text-dark mt-2'>Accciones</h5>
                   

@@ -29,6 +29,7 @@ else if ($menu=='apartarespacio'){
     include 'views/ApartarEspacioview.php';
 }
 
+//<<<<<<< HEADgit 
 else if ($menu=='pagos'){
     include 'views/PagosView.php';
 }
@@ -40,6 +41,14 @@ else if ($menu=='historial'){
 else if ($menu=='accesos'){
     include 'views/Accesosview.php';
 }
+//git =======
+else if ($menu == 'perfil') {
+
+    include 'views/PerfilView.php';
+
+}
+
+//>>>>>>> 907c9067963b0ad41f0d7600c47c2db9a0c0c541
 else {
     include 'views/Error404View.php';
 }
