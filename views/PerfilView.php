@@ -30,115 +30,128 @@ $usuario = [
 
 <body>
 
-<div class="container-scroller">
+    <div class="container-scroller">
 
-    <?= NavBarView(); ?>
+        <?= NavBarView(); ?>
 
-    <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper">
 
-        <?= SideBarView(); ?>
+            <?= SideBarView(); ?>
 
-        <div class="main-panel">
+            <div class="main-panel">
 
-            <div class="content-wrapper">
+                <div class="content-wrapper">
 
-                <!-- Título -->
-                <div class="page-header">
+                    <!-- Título -->
+                    <div class="page-header">
 
-                    <h3 class="page-title">
+                        <h3 class="page-title">
 
-                        <i class="mdi mdi-account-circle mr-2"></i>
-                        Mi Perfil
+                            <i class="mdi mdi-account-circle mr-2"></i>
+                            Mi Perfil
 
-                    </h3>
+                        </h3>
 
-                </div>
+                    </div>
 
-                <!-- Card -->
-                <div class="card shadow-sm border-0">
+                    <!-- Card -->
+                    <div class="card shadow-sm border-0">
 
-                    <div class="card-body">
+                        <div class="card-body">
 
-                        <div class="row">
+                            <div class="row">
 
-                            <!-- Foto -->
-                            <div class="col-md-4 text-center">
+                                <!-- Foto -->
+                                <div class="col-md-4 text-center">
 
-                                <img src="<?= $usuario['foto'] ?>"
-                                     class="rounded-circle shadow"
-                                     width="180">
+                                    <img src="<?= $usuario['foto'] ?>"
+                                        class="rounded-circle shadow"
+                                        width="180">
 
-                                <h4 class="mt-3">
-                                    <?= $usuario['nombre'] ?>
-                                </h4>
+                                    <h4 class="mt-3">
+                                        <?= $usuario['nombre'] ?>
+                                    </h4>
 
-                                <label class="badge badge-primary p-2">
-                                    <?= $usuario['rol'] ?>
-                                </label>
+                                    <label class="badge badge-primary p-2">
+                                        <?= $usuario['rol'] ?>
+                                    </label>
 
-                            </div>
+                                </div>
 
-                            <!-- Información -->
-                            <div class="col-md-8">
+                                <!-- Información -->
+                                <div class="col-md-8">
 
-                                <form method="POST">
+                                    <form method="POST">
 
-                                    <div class="form-group">
+                                        <div class="form-group">
 
-                                        <label>
-                                            Nombre
-                                        </label>
+                                            <label>
+                                                Nombre
+                                            </label>
 
-                                        <input type="text"
-                                               class="form-control"
-                                               value="<?= $usuario['nombre'] ?>">
+                                            <input type="text"
+                                                class="form-control"
+                                                value="<?= $usuario['nombre'] ?>">
 
-                                    </div>
+                                        </div>
 
-                                    <div class="form-group">
+                                        <div class="form-group">
 
-                                        <label>
-                                            Correo
-                                        </label>
+                                            <label>
+                                                Correo
+                                            </label>
 
-                                        <input type="email"
-                                               class="form-control"
-                                               value="<?= $usuario['correo'] ?>">
+                                            <input type="email"
+                                                class="form-control"
+                                                value="<?= $usuario['correo'] ?>">
 
-                                    </div>
+                                        </div>
 
-                                    <div class="form-group">
+                                        <div class="form-group">
 
-                                        <label>
-                                            Teléfono
-                                        </label>
+                                            <label>
+                                                Teléfono
+                                            </label>
 
-                                        <input type="text"
-                                               class="form-control"
-                                               value="<?= $usuario['telefono'] ?>">
+                                            <input type="text"
+                                                class="form-control"
+                                                value="<?= $usuario['telefono'] ?>">
 
-                                    </div>
+                                        </div>
 
-                                    <!-- Botones -->
-                                    <div class="mt-4">
+                                        <div class="form-group">
 
-                                        <button class="btn btn-primary mr-2">
+                                            <label>
+                                                Contraseña
+                                            </label>
 
-                                            <i class="mdi mdi-content-save"></i>
-                                            Guardar Cambios
+                                            <input type="password"
+                                                class="form-control"
+                                                placeholder="********">
 
-                                        </button>
+                                        </div>
 
-                                        <button class="btn btn-danger">
+                                        <div class="mt-4">
 
-                                            <i class="mdi mdi-delete"></i>
-                                            Eliminar Perfil
+                                            <button class="btn btn-primary mr-2">
 
-                                        </button>
+                                                <i class="mdi mdi-content-save"></i>
+                                                Guardar Cambios
 
-                                    </div>
+                                            </button>
 
-                                </form>
+                                            <button class="btn btn-danger">
+
+                                                <i class="mdi mdi-delete"></i>
+                                                Eliminar Perfil
+
+                                            </button>
+
+                                        </div>
+
+                                    </form>
+
+                                </div>
 
                             </div>
 
@@ -154,9 +167,8 @@ $usuario = [
 
     </div>
 
-</div>
-
-<script src="public/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="public/assets/vendors/js/vendor.bundle.base.js"></script>
 
 </body>
+
 </html>
