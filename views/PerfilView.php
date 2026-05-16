@@ -119,52 +119,18 @@ $usuario = [
 
                                         </div>
 
-                                        <hr>
-
-                                        <h5 class="mb-4">
-
-                                            <i class="mdi mdi-lock-reset mr-2"></i>
-                                            Cambiar Contraseña
-
-                                        </h5>
-
                                         <div class="form-group">
 
                                             <label>
-                                                Contraseña Actual
+                                                Contraseña
                                             </label>
 
                                             <input type="password"
                                                 class="form-control"
-                                                placeholder="Ingrese su contraseña actual">
+                                                placeholder="********">
 
                                         </div>
 
-                                        <div class="form-group">
-
-                                            <label>
-                                                Nueva Contraseña
-                                            </label>
-
-                                            <input type="password"
-                                                class="form-control"
-                                                placeholder="Ingrese nueva contraseña">
-
-                                        </div>
-
-                                        <div class="form-group">
-
-                                            <label>
-                                                Confirmar Nueva Contraseña
-                                            </label>
-
-                                            <input type="password"
-                                                class="form-control"
-                                                placeholder="Confirme la nueva contraseña">
-
-                                        </div>
-
-                                        <!-- Botones -->
                                         <div class="mt-4">
 
                                             <button class="btn btn-primary mr-2">

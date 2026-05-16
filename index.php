@@ -28,6 +28,12 @@ else if ($menu == 'perfil') {
 
 }
 
+else if ($menu == 'password') {
+
+    include 'views/CambiarContraseñaView.php';
+
+}
+
 else {
     include 'views/Error404View.php';
 }
