@@ -1,4 +1,7 @@
 <?php
+// Cargar configuración global primero
+require_once 'functions.php';
+
 $menu=$_GET['menu']??'login';
 
 if ($menu=='login'){
@@ -17,13 +20,30 @@ else if ($menu=='micamion'){
 else if ($menu=='miespacio'){
     include 'views/MiEspacioview.php';
 }
-
 else if ($menu=='apartarespacio'){
+    // Cargar el modelo y controlador
+    require_once 'config/database.php';
+    require_once 'models/ApartarEspacio.php';
+    require_once 'controllers/ApartarEspacio.php';
+    
     include 'views/ApartarEspacioview.php';
 }
 
+else if ($menu=='pagos'){
+    include 'views/PagosView.php';
+}
+
+else if ($menu=='historial'){
+    include 'views/Historialview.php';
+}
+
+else if ($menu=='accesos'){
+    include 'views/Accesosview.php';
+}
 else {
     include 'views/Error404View.php';
 }
+
+
 //este es el index 
 ?>

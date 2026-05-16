@@ -33,21 +33,21 @@ function SideBarView(){
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link' href='pages/samples/widgets.html'>
+              <a class='nav-link' href='?menu=pagos'>
                 <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
                 <span class='menu-title'>Pagos</span>
               </a>
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link' href='pages/samples/widgets.html'>
+              <a class='nav-link' href='?menu=historial'>
                 <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
                 <span class='menu-title'>Historial</span>
               </a>
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link' href='pages/samples/widgets.html'>
+              <a class='nav-link' href='?menu=accesos'>
                 <span class='icon-bg'><i class='mdi mdi-widgets menu-icon'></i></span>
                 <span class='menu-title'>Accesos</span>
               </a>
