@@ -1,6 +1,7 @@
 <?php
-function NavBarView(){
-    return "
+function NavBarView()
+{
+  return "
     <nav class='navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row'>
         <div class='text-center navbar-brand-wrapper d-flex align-items-center justify-content-center'>
           <a class='navbar-brand brand-logo' href='index.html'><img src='public/assets/images/logotractopension.png' alt='logo' /></a>
@@ -58,6 +59,14 @@ function NavBarView(){
 
                   <div role='separator' class='dropdown-divider'></div>
                   <h5 class='dropdown-header text-uppercase  pl-2 text-dark mt-2'>Accciones</h5>
+
+                  <a class='dropdown-item py-1 d-flex align-items-center justify-content-between' href='?menu=password'>
+
+    <span>Cambiar Contraseña</span>
+
+    <i class='mdi mdi-lock-reset ml-1'></i>
+
+</a>
                   
                   <a class='dropdown-item py-1 d-flex align-items-center justify-content-between' href='?menu=login'>
                     <span>Cerrrar Sesión</span>
@@ -76,4 +85,3 @@ function NavBarView(){
       </nav>
     ";
 }
-?>
